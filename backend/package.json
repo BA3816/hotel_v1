@@ -1,0 +1,37 @@
+{
+  "name": "hotel-backend",
+  "version": "1.0.0",
+  "description": "Hotel booking system backend with Express.js and MySQL",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node kill-port.js && nodemon server.js",
+    "dev-auto": "node start-dev.js",
+    "test-db": "node config/testConnection.js",
+    "test-db-full": "node config/fullConnectionTest.js",
+    "kill-port": "node kill-port.js",
+    "init-db": "node scripts/init.js",
+    "generate-secret": "node scripts/generateJwtSecret.js"
+  },
+  "keywords": [
+    "hotel",
+    "booking",
+    "express",
+    "mysql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
